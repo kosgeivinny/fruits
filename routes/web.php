@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/Fruits/create', 'FruitController@store');
+Route::get('/Fruits/create', 'FruitController@create');
+Route::get('Fruits/edit/{id}', 'FruitController@edit');
+Route::post('Fruits/edit/{id}', 'FruitController@update');
+Route::delete('Fruits/{id}', 'FruitController@destroy');
+Route::get('Fruits/show/{id}', 'FruitController@show');
+Route::get('Fruits', 'FruitController@index');
+
