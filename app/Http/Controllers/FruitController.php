@@ -85,7 +85,7 @@ class FruitController extends Controller
         return redirect('Fruits')->with('success', 'Fruit deleted!!');
     }
     public function show($id){
-$fruit = Fruit::find($id);
-return view('Fruits.show', compact('fruit' ));
+        $fruit = Fruit::find($id);
+        return view('Fruits.show', compact('fruit' ));
     }
 }

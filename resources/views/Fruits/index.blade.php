@@ -33,7 +33,7 @@
             <td>{{ $fruit['price'] }}</td>
             <td>{{ $fruit['discount'] }}</td>
 
-                <td><a href="{{action('FruitController@show', $fruit['id'])}}" class="btn btn-warning"> Show </a></td>
+                <td><a href="{{action('FruitController@show', $fruit['id'])}}" class="btn btn-success"> Show </a></td>
 
                 <td><a href="{{action('FruitController@edit', $fruit['id'])}}" class="btn btn-warning"> Edit </a></td>
             <td>
